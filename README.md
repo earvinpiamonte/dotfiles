@@ -63,7 +63,6 @@ ln -s ~/dotfiles/opencode ~/.config/opencode
 | File | Description |
 |------|-------------|
 | `opencode.json` | Main configuration file (model settings, etc.) |
-| `.gitignore` | Ignores auto-generated files (node_modules, lockfiles) |
 
 ## License
 
