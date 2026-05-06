@@ -4,7 +4,7 @@ Personal development environment configuration.
 
 ## Overview
 
-This repository contains my personal dotfiles, currently featuring a Neovim configuration based on [kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim).
+This repository contains my personal dotfiles, currently featuring Neovim and OpenCode AI configurations.
 
 ## Neovim Configuration
 
@@ -43,6 +43,27 @@ nvim
 
 - Neovim >= 0.10 (stable or nightly)
 - Git
+
+## OpenCode Configuration
+
+### Overview
+
+Configuration for [OpenCode](https://opencode.ai), an AI-powered coding assistant.
+
+### Installation
+
+1. Symlink the OpenCode configuration:
+
+```sh
+ln -s ~/dotfiles/opencode ~/.config/opencode
+```
+
+### Files
+
+| File | Description |
+|------|-------------|
+| `opencode.json` | Main configuration file (model settings, etc.) |
+| `.gitignore` | Ignores auto-generated files (node_modules, lockfiles) |
 
 ## License
 
