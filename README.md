@@ -4,7 +4,7 @@ Personal development environment configuration.
 
 ## Overview
 
-This repository contains my personal dotfiles, currently featuring Neovim and OpenCode AI configurations.
+This repository contains my personal dotfiles, currently featuring Neovim, Ghostty, and OpenCode AI configurations.
 
 ## Neovim Configuration
 
@@ -63,6 +63,26 @@ ln -s ~/dotfiles/opencode ~/.config/opencode
 | File | Description |
 |------|-------------|
 | `opencode.json` | Main configuration file (model settings, etc.) |
+
+## Ghostty Configuration
+
+### Overview
+
+Configuration for [Ghostty](https://ghostty.org), a fast, feature-rich, and cross-platform terminal emulator.
+
+### Installation
+
+1. Symlink the Ghostty configuration:
+
+```sh
+ln -s ~/dotfiles/ghostty ~/Library/Application\ Support/com.mitchellh.ghostty
+```
+
+### Files
+
+| File | Description |
+|------|-------------|
+| `config` | Main configuration file (theme, font, keybindings, etc.) |
 
 ## License
 
