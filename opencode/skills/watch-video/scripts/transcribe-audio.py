@@ -9,7 +9,7 @@ video = sys.argv[1] if len(sys.argv) > 1 else ""
 
 output_dir = sys.argv[2] if len(sys.argv) > 2 else os.path.join(tempfile.gettempdir(), "video-frames")
 
-language = sys.argv[3] if len(sys.argv) > 3 else "en"
+language = sys.argv[3] if len(sys.argv) > 3 else None
 
 if not video or not os.path.isfile(video):
     print(f"Error: Video file not found: {video}", file=sys.stderr)
@@ -85,7 +85,10 @@ except ImportError:
 
 model = whisper.load_model("base")
 
-result = model.transcribe(audio_path, language=language)
+if language:
+    result = model.transcribe(audio_path, language=language)
+else:
+    result = model.transcribe(audio_path)
 
 transcript_path = os.path.join(frame_dir, "transcript.txt")
 
