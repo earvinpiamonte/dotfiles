@@ -16,7 +16,7 @@ Before symlinking the configurations, ensure the following tools and frameworks 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-### Fonts
+### [Fonts](https://formulae.brew.sh/cask/font-jetbrains-mono-nerd-font)
 
 Ghostty and Neovim are configured to use **JetBrainsMono Nerd Font**.
 
