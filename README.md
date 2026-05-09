@@ -16,6 +16,14 @@ Before symlinking the configurations, ensure the following tools and frameworks 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
+### Fonts
+
+Ghostty and Neovim are configured to use **JetBrainsMono Nerd Font**.
+
+```sh
+brew install --cask font-jetbrains-mono-nerd-font
+```
+
 ### [Oh My Zsh](https://ohmyz.sh)
 
 ```sh
