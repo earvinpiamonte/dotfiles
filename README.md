@@ -10,18 +10,65 @@ This repository contains my personal dotfiles, currently featuring Neovim, Ghost
 
 Before symlinking the configurations, ensure the following tools and frameworks are installed:
 
-| Dependency | Description | Installation |
-|------------|-------------|--------------|
-| [Homebrew](https://brew.sh) | macOS package manager | `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"` |
-| [Oh My Zsh](https://ohmyz.sh) | Zsh framework | `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"` |
-| [Powerlevel10k](https://github.com/romkatv/powerlevel10k) | Zsh prompt theme | `git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k` |
-| [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) | Fish-like autosuggestions | `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions` |
-| [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) | Command syntax highlighting | `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting` |
-| [zoxide](https://github.com/ajeetdsouza/zoxide) | Smarter `cd` command | `brew install zoxide` |
-| [fzf](https://github.com/junegunn/fzf) | Fuzzy finder | `brew install fzf` |
-| [bat](https://github.com/sharkdp/bat) | Syntax-highlighting cat clone | `brew install bat` |
-| [nvm](https://github.com/nvm-sh/nvm) | Node Version Manager | `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.4/install.sh \| bash` |
-| [ffmpeg](https://ffmpeg.org) (optional) | Video converter for `vconvert` alias | `brew install ffmpeg` |
+### [Homebrew](https://brew.sh)
+
+```sh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+### [Oh My Zsh](https://ohmyz.sh)
+
+```sh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+### [Powerlevel10k](https://github.com/romkatv/powerlevel10k)
+
+```sh
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+```
+
+### [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+
+```sh
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
+
+### [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+
+```sh
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+```
+
+### [zoxide](https://github.com/ajeetdsouza/zoxide)
+
+```sh
+brew install zoxide
+```
+
+### [fzf](https://github.com/junegunn/fzf)
+
+```sh
+brew install fzf
+```
+
+### [bat](https://github.com/sharkdp/bat)
+
+```sh
+brew install bat
+```
+
+### [nvm](https://github.com/nvm-sh/nvm)
+
+```sh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.4/install.sh | bash
+```
+
+### [ffmpeg](https://ffmpeg.org) (optional)
+
+```sh
+brew install ffmpeg
+```
 
 ## Neovim Configuration
 
