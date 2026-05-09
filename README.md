@@ -4,7 +4,7 @@ Personal development environment configuration.
 
 ## Overview
 
-This repository contains my personal dotfiles, currently featuring Neovim, Ghostty, and OpenCode AI configurations.
+This repository contains my personal dotfiles, currently featuring Neovim, Ghostty, OpenCode AI, Zsh, Powerlevel10k, and Git configurations.
 
 ## Neovim Configuration
 
@@ -83,6 +83,72 @@ ln -s ~/dotfiles/ghostty ~/Library/Application\ Support/com.mitchellh.ghostty
 | File | Description |
 |------|-------------|
 | `config` | Main configuration file (theme, font, keybindings, etc.) |
+
+## Zsh Configuration
+
+### Overview
+
+Configuration for Zsh shell with Oh My Zsh, including plugins and custom aliases.
+
+### Installation
+
+1. Symlink the Zsh configuration files:
+
+```sh
+ln -s ~/dotfiles/zsh/.zshrc ~/.zshrc
+ln -s ~/dotfiles/zsh/.zsh_aliases ~/.zsh_aliases
+ln -s ~/dotfiles/zsh/.zshenv ~/.zshenv
+ln -s ~/dotfiles/zsh/.zprofile ~/.zprofile
+```
+
+### Files
+
+| File | Description |
+|------|-------------|
+| `.zshrc` | Main Zsh configuration (Oh My Zsh, plugins, theme, keybindings) |
+| `.zsh_aliases` | Custom aliases and utility functions |
+| `.zshenv` | Environment variables and PATH exports |
+| `.zprofile` | Login shell configuration |
+
+## Powerlevel10k Configuration
+
+### Overview
+
+Configuration for [Powerlevel10k](https://github.com/romkatv/powerlevel10k), a fast and customizable Zsh prompt theme.
+
+### Installation
+
+1. Symlink the Powerlevel10k configuration:
+
+```sh
+ln -s ~/dotfiles/p10k/.p10k.zsh ~/.p10k.zsh
+```
+
+### Files
+
+| File | Description |
+|------|-------------|
+| `.p10k.zsh` | Prompt theme configuration (segments, colors, icons) |
+
+## Git Configuration
+
+### Overview
+
+Global Git configuration including user identity and default settings.
+
+### Installation
+
+1. Symlink the Git configuration:
+
+```sh
+ln -s ~/dotfiles/git/.gitconfig ~/.gitconfig
+```
+
+### Files
+
+| File | Description |
+|------|-------------|
+| `.gitconfig` | Git user configuration |
 
 ## License
 
