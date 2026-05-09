@@ -4,8 +4,7 @@
   "agent": {
     "build": {
       "permission": {
-        "*": "allow",
-        "doom_loop": "ask"
+        "external_directory": "allow"
       }
     }
   }
