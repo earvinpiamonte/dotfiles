@@ -233,6 +233,16 @@ ln -s ~/dotfiles/git/.gitconfig ~/.gitconfig
 |------|-------------|
 | `.gitconfig` | Git user configuration |
 
+## Final Step
+
+After symlinking all configurations, reload your shell to apply changes:
+
+```sh
+exec zsh
+```
+
+Or restart your terminal emulator.
+
 ## License
 
 [MIT](LICENSE) - Copyright (c) 2026 Noel Earvin Piamonte
