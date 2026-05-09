@@ -835,13 +835,13 @@ require('lazy').setup({
         transparent = true,
         dimInactive = false,
         terminalColors = true,
-        theme = 'wave',
+        theme = 'dragon',
         background = {
-          dark = 'wave',
+          dark = 'dragon',
           light = 'lotus',
         },
       }
-      vim.cmd.colorscheme 'kanagawa'
+      vim.cmd.colorscheme 'kanagawa-dragon'
     end,
   },
 
