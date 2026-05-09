@@ -8,15 +8,29 @@ This repository contains my personal dotfiles, currently featuring Neovim, Ghost
 
 ## Prerequisites
 
-Before symlinking the configurations, ensure the following tools and frameworks are installed:
+Before symlinking the configurations, install the following tools in order.
 
-### [Homebrew](https://brew.sh)
+### 1. Clone this repository
+
+```sh
+git clone https://github.com/earvinpiamonte/dotfiles.git ~/dotfiles
+```
+
+### 2. [Homebrew](https://brew.sh)
 
 ```sh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-### [Fonts](https://formulae.brew.sh/cask/font-jetbrains-mono-nerd-font)
+### 3. [Git](https://git-scm.com)
+
+macOS ships with Git, but you can upgrade to the latest version via Homebrew:
+
+```sh
+brew install git
+```
+
+### 4. [Fonts](https://formulae.brew.sh/cask/font-jetbrains-mono-nerd-font)
 
 Ghostty and Neovim are configured to use **JetBrainsMono Nerd Font**.
 
@@ -24,58 +38,78 @@ Ghostty and Neovim are configured to use **JetBrainsMono Nerd Font**.
 brew install --cask font-jetbrains-mono-nerd-font
 ```
 
-### [Oh My Zsh](https://ohmyz.sh)
+### 5. [Oh My Zsh](https://ohmyz.sh)
 
 ```sh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-### [Powerlevel10k](https://github.com/romkatv/powerlevel10k)
+### 6. [Powerlevel10k](https://github.com/romkatv/powerlevel10k)
 
 ```sh
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 ```
 
-### [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+### 7. [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
 
 ```sh
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
-### [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+### 8. [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 
 ```sh
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
 
-### [zoxide](https://github.com/ajeetdsouza/zoxide)
+### 9. [zoxide](https://github.com/ajeetdsouza/zoxide)
 
 ```sh
 brew install zoxide
 ```
 
-### [fzf](https://github.com/junegunn/fzf)
+### 10. [fzf](https://github.com/junegunn/fzf)
 
 ```sh
 brew install fzf
 ```
 
-### [bat](https://github.com/sharkdp/bat)
+### 11. [bat](https://github.com/sharkdp/bat)
 
 ```sh
 brew install bat
 ```
 
-### [nvm](https://github.com/nvm-sh/nvm)
+### 12. [nvm](https://github.com/nvm-sh/nvm)
 
 ```sh
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.4/install.sh | bash
 ```
 
-### [ffmpeg](https://ffmpeg.org) (optional)
+### 13. [ffmpeg](https://ffmpeg.org) (optional)
 
 ```sh
 brew install ffmpeg
+```
+
+### 14. [Neovim](https://neovim.io)
+
+Requires Neovim >= 0.10.
+
+```sh
+brew install neovim
+```
+
+### 15. [Ghostty](https://ghostty.org)
+
+```sh
+brew install --cask ghostty
+```
+
+### 16. [OpenCode](https://opencode.ai)
+
+```sh
+curl -fsSL https://opencode.ai/install | bash
 ```
 
 ## Neovim Configuration
@@ -91,30 +125,17 @@ Based on [kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim) with the f
 | [render-markdown.nvim](https://github.com/MeanderingProgrammer/render-markdown.nvim) | Enhanced Markdown rendering with images and mermaid diagrams |
 | [smear-cursor.nvim](https://github.com/sphamba/smear-cursor.nvim) | Smooth cursor animation |
 
-### Installation
-
-1. Clone this repository:
-
-```sh
-git clone https://github.com/earvinpiamonte/dotfiles.git ~/dotfiles
-```
-
-2. Symlink the Neovim configuration:
+### Symlink
 
 ```sh
 ln -s ~/dotfiles/nvim ~/.config/nvim
 ```
 
-3. Start Neovim - plugins will install automatically:
+Start Neovim and plugins will install automatically:
 
 ```sh
 nvim
 ```
-
-### Requirements
-
-- Neovim >= 0.10 (stable or nightly)
-- Git
 
 ## OpenCode Configuration
 
@@ -122,9 +143,7 @@ nvim
 
 Configuration for [OpenCode](https://opencode.ai), an AI-powered coding assistant.
 
-### Installation
-
-1. Symlink the OpenCode configuration:
+### Symlink
 
 ```sh
 ln -s ~/dotfiles/opencode ~/.config/opencode
@@ -142,9 +161,7 @@ ln -s ~/dotfiles/opencode ~/.config/opencode
 
 Configuration for [Ghostty](https://ghostty.org), a fast, feature-rich, and cross-platform terminal emulator.
 
-### Installation
-
-1. Symlink the Ghostty configuration:
+### Symlink
 
 ```sh
 ln -s ~/dotfiles/ghostty ~/Library/Application\ Support/com.mitchellh.ghostty
@@ -162,9 +179,7 @@ ln -s ~/dotfiles/ghostty ~/Library/Application\ Support/com.mitchellh.ghostty
 
 Configuration for Zsh shell with Oh My Zsh, including plugins and custom aliases.
 
-### Installation
-
-1. Symlink the Zsh configuration files:
+### Symlink
 
 ```sh
 ln -s ~/dotfiles/zsh/.zshrc ~/.zshrc
@@ -188,9 +203,7 @@ ln -s ~/dotfiles/zsh/.zprofile ~/.zprofile
 
 Configuration for [Powerlevel10k](https://github.com/romkatv/powerlevel10k), a fast and customizable Zsh prompt theme.
 
-### Installation
-
-1. Symlink the Powerlevel10k configuration:
+### Symlink
 
 ```sh
 ln -s ~/dotfiles/p10k/.p10k.zsh ~/.p10k.zsh
@@ -208,9 +221,7 @@ ln -s ~/dotfiles/p10k/.p10k.zsh ~/.p10k.zsh
 
 Global Git configuration including user identity and default settings.
 
-### Installation
-
-1. Symlink the Git configuration:
+### Symlink
 
 ```sh
 ln -s ~/dotfiles/git/.gitconfig ~/.gitconfig
